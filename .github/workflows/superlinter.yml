@@ -8,8 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
+        uses: JohnMark023@MIDC
         
       - name: Run Super-Linter
+        uses: JohnMark023@MIDC
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
